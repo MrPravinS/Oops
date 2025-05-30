@@ -22,10 +22,24 @@ public class Basics {
 }
 */
 
+
 class Student{
     String name;
     int age;
     String grade;
+
+    Student(){
+        name = "unknown";
+        age = 0;
+        grade = "F";
+
+    }
+
+   Student(String n, int a, String g){
+      name = n;
+      age = a;
+      grade = g;
+   }
 
     void displayInfo(){
         System.out.println("Student Name : " + name + " \nAge: "+ age + "\nGrade : " + grade);
@@ -36,6 +50,7 @@ public class Basics {
  public static void main(String[] args) {
      Student student1 = new Student();
      Student student2 = new Student();
+     Student student3 = new Student("Nandani",7,"B+");
      student1.name = "Pravin";
      student1.age = 22;
      student1.grade = "A+";
@@ -47,8 +62,11 @@ public class Basics {
 
      student1.displayInfo();
      student2.displayInfo();
+     student3.displayInfo();
 
 
  }
     
 }
+
+
