@@ -36,9 +36,9 @@ class Student{
     }
 
    Student(String n, int a, String g){
-      name = n;
-      age = a;
-      grade = g;
+      this.name = n;
+      this.age = a;
+      this.grade = g;
    }
 
     void displayInfo(){

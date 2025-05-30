@@ -12,21 +12,26 @@ public class construcoter {
 }
 
 
+
+
 class Book{
     String title;
     String author;
     float price;
 
     Book(){
-        title = "Unknown";
-        author = "anonymous";
-        price = 0;
+        this("laws of power", "Pravin", 0);   // calls another constructor
     }
+    // Book(){
+    //     this.title = "Unknown";
+    //     this.author = "anonymous";
+    //     this.price = 0;
+    // }
 
     Book(String t, String a, float p){
-       title = t;
-       author = a;
-       price = p;
+       this.title = t;    // this keywork refers to the current object of the class
+       this.author = a;
+       this.price = p;
     }
 
     void displayBookDetails(){
